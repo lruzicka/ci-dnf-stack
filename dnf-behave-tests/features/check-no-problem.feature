@@ -1,6 +1,6 @@
 Feature: Check when there is no problem
 
-
+@fedora
 Scenario Outline: Check <option>
    When I execute dnf with args "check <option>"
    Then the exit code is 0
