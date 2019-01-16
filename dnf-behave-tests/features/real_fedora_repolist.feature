@@ -3,9 +3,9 @@ Feature: Repolist
 
 Background: Using repositories fedora and fedora-updates
   Given I use the repository "fedora"
-    And I use the repository "fedora-updates"
+    And I use the repository "updates"
     And I use the repository "fedora-modular"
-    And I use the repository "fedora-updates-modular"
+    And I use the repository "updates-modular"
 
 @fedora
 Scenario: Repolist without arguments
