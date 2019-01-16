@@ -1,6 +1,6 @@
 Feature: Repolist when there are no repositories
 
-
+@fedora
 Scenario: Repolist without arguments
   Given There are no repositories
    When I execute dnf with args "repolist"
@@ -8,7 +8,7 @@ Scenario: Repolist without arguments
     And stdout is empty
     And stderr contains "No repositories available"
 
-
+@fedora
 Scenario: Repolist with "enabled"
   Given There are no repositories
    When I execute dnf with args "repolist enabled"
@@ -16,7 +16,7 @@ Scenario: Repolist with "enabled"
     And stdout is empty
     And stderr contains "No repositories available"
 
-
+@fedora
 Scenario: Repolist with "disabled"
   Given There are no repositories
    When I execute dnf with args "repolist disabled"
@@ -24,7 +24,7 @@ Scenario: Repolist with "disabled"
     And stdout is empty
     And stderr contains "No repositories available"
 
-
+@fedora
 Scenario: Repolist with "all"
   Given There are no repositories
    When I execute dnf with args "repolist all"
