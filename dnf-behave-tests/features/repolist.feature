@@ -35,8 +35,8 @@ Scenario: Repolist with "disabled"
    Then the exit code is 0
     And stdout contains "fedora-source"
     And stdout contains "updates-source"
-    And stdout does not contain "*fedora"
-    And stdout does not contain "*updates"
+    And stdout does not contain "fedora\s+"
+    And stdout does not contain "updates\s+"
 
 @fedora
 Scenario: Repolist with "all"
