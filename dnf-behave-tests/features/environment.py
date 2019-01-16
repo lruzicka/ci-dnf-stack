@@ -6,8 +6,9 @@ import tempfile
 FIXTURES_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "fixtures"))
 
 DEFAULT_DNF_COMMAND = "dnf"
-DEFAULT_CONFIG = os.path.join(FIXTURES_DIR, "dnf.conf")
-DEFAULT_REPOSDIR = os.path.join(FIXTURES_DIR, "repos.d")
+#DEFAULT_CONFIG = os.path.join(FIXTURES_DIR, "dnf.conf")
+DEFAULT_CONFIG = os.path.join("/etc/dnf/dnf.conf")
+DEFAULT_REPOSDIR = os.path.join("/etc/yum.repos.d")
 DEFAULT_RELEASEVER="29"
 
 
