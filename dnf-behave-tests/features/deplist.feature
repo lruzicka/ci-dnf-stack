@@ -2,7 +2,7 @@ Feature: Deplist as a commmand and option
 
 Scenario Outline: Deplist as <type>
   Given I use the repository "fedora"
-    And I use the repository "fedora-updates"
+    And I use the repository "updates"
    When I execute dnf with args "<command> mc"
    Then the exit code is 0
    And stdout contains "package:.mc"
