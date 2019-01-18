@@ -1,5 +1,6 @@
 Feature: Help command
 
+@fedora        
 Scenario: General help
    When I execute dnf with args "--help"
    Then the exit code is 0
@@ -15,7 +16,7 @@ Scenario: General help
     And stderr contains "No such command"
     And stderr contains "It could be a DNF plugin command"
 
-
+@fedora
 Scenario: Command help
    When I execute dnf with args "help install"
    Then the exit code is 0
